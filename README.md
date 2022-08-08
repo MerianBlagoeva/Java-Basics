@@ -10,7 +10,7 @@ The Programming Basics course provides basic programming skills such as writing 
 
 The course covers the following topics:
 
-- \Conditional Statements
-- For Loops
-- While Loops
-- Nested loops
+- **Conditional Statements**
+- **For Loops**
+- **While Loops**
+- **Nested Loops**
