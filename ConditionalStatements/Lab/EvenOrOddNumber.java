@@ -2,15 +2,15 @@ package Lab;
 
 import java.util.Scanner;
 
-public class InvalidNumber {
+public class EvenOrOddNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int number = Integer.parseInt(sc.nextLine());
 
-        boolean isValid = (number >= 100 && number <= 200 || number == 0);
-
-        if (!isValid)
-            System.out.println("invalid");
+        if (number % 2 == 0)
+            System.out.println("even");
+            else
+            System.out.println("odd");
     }
 }
