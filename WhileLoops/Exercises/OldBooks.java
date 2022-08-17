@@ -19,5 +19,6 @@ public class OldBooks {
             booksCount++;
         }
         System.out.printf("You checked %d books and found it.", booksCount);
+
     }
 }

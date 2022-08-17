@@ -14,7 +14,6 @@ public class ExamPreparation {
         double avg;
         String lastTask = "";
 
-
         while (!task.equals("Enough")) {
             int grade = Integer.parseInt(sc.nextLine());
 

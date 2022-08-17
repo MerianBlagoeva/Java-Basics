@@ -23,13 +23,13 @@ public class Vacation {
                 spendCount = 0;
                 herMoney += amount;
             }
-            if (spendCount == 5) {
-                cantSave = true;
-                break;
-            }
-            if (herMoney < 0) {
-                herMoney = 0;
-            }
+                if (spendCount == 5) {
+                    cantSave = true;
+                    break;
+                }
+                if (herMoney < 0) {
+                    herMoney = 0;
+                }
         }
         if (cantSave) {
             System.out.println("You can't save the money.");

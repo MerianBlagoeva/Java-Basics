@@ -24,11 +24,14 @@ public class Cake {
             if (allPieces < 0) {
                 break;
             }
+
+
         }
         if (isStopped) {
             System.out.printf("%d pieces are left.", allPieces);
         } else {
             System.out.printf("No more cake left! You need %d pieces more.", Math.abs(allPieces));
         }
+
     }
 }

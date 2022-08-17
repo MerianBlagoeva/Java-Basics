@@ -27,6 +27,7 @@ public class Moving {
             System.out.printf("%d Cubic meters left.", space);
         } else {
             System.out.printf("No more free space! You need %d Cubic meters more.", Math.abs(space));
+
         }
     }
 }
