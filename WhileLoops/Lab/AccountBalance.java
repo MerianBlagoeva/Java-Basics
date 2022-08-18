@@ -5,19 +5,20 @@ import java.util.Scanner;
 public class AccountBalance {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        double account = 0;
+        String amount = sc.nextLine();
+        double total = 0;
 
-        while (!input.equals("NoMoreMoney")) {
-            double currentSum = Double.parseDouble(input);
-            if (currentSum < 0) {
+        while (!amount.equals("NoMoreMoney")) {
+            double currentAmount = Double.parseDouble(amount);
+            if (currentAmount < 0) {
                 System.out.println("Invalid operation!");
                 break;
             }
-            account += currentSum;
-            System.out.printf("Increase: %.2f%n", currentSum);
-            input = sc.nextLine();
+            total += currentAmount;
+            System.out.printf("Increase: %.2f%n", Double.parseDouble(amount));
+            amount = sc.nextLine();
         }
-        System.out.printf("Total: %.2f", account);
+        System.out.printf("Total: %.2f", total);
+
     }
 }

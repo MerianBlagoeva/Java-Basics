@@ -5,33 +5,33 @@ import java.util.Scanner;
 public class Graduation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         String name = sc.nextLine();
-        int goodGrades = 0;
-        int poorGrades = 0;
+        int badGradeCount = 0;
+        int goodGradeCount = 0;
+        double gradesSum = 0;
         int gradeCount = 1;
-        double allGrades = 0;
 
 
-        while (goodGrades < 12) {
-            if (poorGrades == 2) {
+        while (goodGradeCount < 12) {
+            if (badGradeCount == 2) {
                 break;
             }
-            double grade = sc.nextInt();
-
-            if (grade < 4) {
-                poorGrades ++;
+            double currentGrade = Double.parseDouble(sc.nextLine());
+            gradesSum += currentGrade;
+            if (currentGrade < 4.00) {
+                badGradeCount++;
                 continue;
             }
-
-            goodGrades++;
+            goodGradeCount++;
             gradeCount++;
-            allGrades += grade;
+
         }
-        double avgGrade = allGrades / gradeCount;
-        if (goodGrades >= 12) {
-            System.out.printf("%s graduated. Average grade: %.2f", name, avgGrade);
+        double avg = gradesSum / (1.00 * goodGradeCount);
+        if (goodGradeCount == 12) {
+            System.out.printf("%s graduated. Average grade: %.2f", name, avg);
         } else {
-            System.out.printf("%s has been excluded at %d grade", name, gradeCount);
+            System.out.printf("%s has been excluded at %d grade ", name, gradeCount);
         }
     }
 }
