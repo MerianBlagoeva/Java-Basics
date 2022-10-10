@@ -14,3 +14,7 @@ The course covers the following topics:
 - **For Loops**
 - **While Loops**
 - **Nested Loops**
+
+![CertificateBasics_2_65](https://user-images.githubusercontent.com/110605865/194892634-f03dd6df-0ca1-465e-abc8-6797a257bc4b.png)
+
+
